@@ -61,15 +61,15 @@ function createWeatherTemplate() {
                     <div class="custom">${arrWeather.forecastData[0].day.condition.text}</div>
                     <span class="me-4">
                         <img src="./images/icon-umberella@2x.png" alt="" class="me-2">
-                        20%
+                        ${arrWeather.forecastData[0].day.daily_chance_of_rain}%
                     </span>
                     <span class="me-4">
                         <img src="./images/icon-wind@2x.png" alt="" class="me-2">
-                        18km/h
+                        ${arrWeather.forecastData[0].day.maxwind_kph} km/h
                     </span>
                     <span class="me-4">
                         <img src="./images/icon-compass@2x.png" alt="" class="me-2">
-                        East
+                        ${arrWeather.current.wind_dir}
                     </span>
                 </div>
             </div>
